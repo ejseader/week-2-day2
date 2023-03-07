@@ -1,0 +1,44 @@
+:root {
+    --main-color: lightseagreen;
+    --main-padding: 15px 5%;
+}
+
+body {
+    background-color: #777;;
+}
+
+header {
+    padding: var(--main-padding);
+}
+
+header h3 {
+    font-size: 1.3rem;
+    text-decoration: underline;
+    color: var(--main-color);
+}
+
+main h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--main-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 35px auto 0;
+    padding: var(--main-padding);
+}
+
+/* targets all direct children of the form */
+
+form > * {
+    margin: 5px 0;
+    padding: 9px 10px;
+    border-radius: 30px;
+    border:none;
+    font-family: 'Lato';
+    font-size: 1rem;
+
+}
